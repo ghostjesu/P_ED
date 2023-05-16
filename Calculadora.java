@@ -31,4 +31,17 @@ public class Calculadora {
     public double sacarPorcentaje(double cantidad, double porcentaje) {
         return (cantidad * porcentaje) / 100.0;
     }
+    
+    public int calcularFactorial(int numero) throws IllegalArgumentException {
+        if (numero < 0) {
+            throw new IllegalArgumentException("No se puede calcular el factorial de un número negativo");
+        }
+        
+        int factorial = 1;
+        for (int i = 1; i <= numero; i++) {
+            factorial *= i;
+        }
+        
+        return factorial;
+    }
 }
