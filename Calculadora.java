@@ -1,4 +1,3 @@
-
 public class Calculadora {
     
     public int sumar(int num1, int num2) {
@@ -27,5 +26,9 @@ public class Calculadora {
             throw new IllegalArgumentException("No se puede calcular la raíz cuadrada de un número negativo");
         }
         return Math.sqrt(numero);
+    }
+    
+    public double sacarPorcentaje(double cantidad, double porcentaje) {
+        return (cantidad * porcentaje) / 100.0;
     }
 }
