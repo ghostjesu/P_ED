@@ -44,4 +44,7 @@ public class Calculadora {
         
         return factorial;
     }
+    public double calcularExponente(double base, double exponente) {
+        return Math.pow(base, exponente);
+    }
 }
